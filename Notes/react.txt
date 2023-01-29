@@ -1,1 +1,14 @@
-Starting with React
+STARTING WITH REACT
+----------------------------------------------------------------
+-Installing Babel for Error Handling
+npm install --save-dev @babel/preset-react
+--This might not be needed. Installed it anyways. I added extension for Babel and a color theme.
+----------------------------------------------------------------
+
+Install React to Terminal
+----------------------------------------------------------------
+npx create-react-app my-app
+npm audit
+cd my-app
+npm start
+----------------------------------------------------------------
