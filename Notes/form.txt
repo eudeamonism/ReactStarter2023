@@ -1,0 +1,24 @@
+You shouldn't put an event listener inside a button when that button is inside a form.
+
+Forms automatically listen for an event when a button is inside it.
+
+-add listener on form
+
+<form onSubmit={}>
+
+-put e.preventDefault(); so form doesn't autmatically submit.
+
+-------------------------------------------------------
+TWO WAY BINDING
+
+We're going to add the value attribute inside the input element.
+
+We're adding default value from destructured array from setState.
+
+<input ... value={enteredTitle}>
+
+SUMMARY: When we change the state we change the input. We are allowed to reset the forms upon each use.
+
+OK --> When we submit the form, we can place the setState functions below, and therefore reset the form fields to blank.
+
+PS --> Don't forget to add vallue atribute to each input with their respective useState value variable.

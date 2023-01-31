@@ -1,0 +1,25 @@
+instead of having multiple state slices, you can pass useState once, with an object.
+
+const [userInput, setUserInput] = useState({
+enteredTitle: '',
+enteredAmount: '',
+enteredDate: ''
+})
+
+const titleChangeHandler = (e) => {
+setUserInput({
+...userInput,
+enteredTitle: e.target.value,
+})
+}
+
+--This one useState will delete the information from the other two useStates unless you retrieve all data from other props with rest operator.
+
+
+--HOWEVER
+
+setUserInput((prevState) => {
+return {...prevState, enteredTitle: e.target.value}
+})
+
+Putting a function within the set function will ensure that the old files are added correctly, since many state changes can have the incorrect state update
