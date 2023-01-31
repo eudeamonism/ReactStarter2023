@@ -1,6 +1,6 @@
 React only runs one time, root file. It needs to refresh. reevaluated.
 
-CONCEPT: State
+CONCEPT: useState
 What triggers React to run again?
 
 import React, { useState } from 'react';
