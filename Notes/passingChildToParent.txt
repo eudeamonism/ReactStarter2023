@@ -1,0 +1,25 @@
+Pretty much create a custom event listener with its own event handler.
+
+We attach this event listener attribute within the actual component, ie
+
+<ExpenseForm eventListener={eventHandler}>
+
+TIP: We don't have to name it like onClick or onSubmit---since this case is customized.
+
+For the event handler, we put a parameter in as a rest operator. Therefore, the const variable from the child we want, we set as const.
+
+IE -->
+
+const eventHandler = (someParameter) => {
+const childVariable = {...someParameter, id: Math.random().toString()
+}
+}
+
+Summary: WE use classic event handler and listerner. However, the const variable in the child component contains (childVariable) the data we actually want. Therefore, we call it inside our parent component. We extract the data with a rest operator.
+
+Next Step.
+
+Inside child component, we therefore pass props inside the parameter.
+
+1) const childComponent = (props)...
+2) props.eventListener(childVariable)
