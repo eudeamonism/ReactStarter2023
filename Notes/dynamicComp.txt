@@ -26,3 +26,14 @@ setExpenses((prevExpenses) => {
 --expense paramater is the new data we typed.
 --...prevExpenses is the old data
 --[it's all inside a new array]
+
+--Adding Key, unique identifier
+Always add a key when mapping a list of items.
+
+<ExpenseItem
+
+key="expense.id"
+
+...
+
+/>
