@@ -1,0 +1,10 @@
+A parent component had an array of data. In the child, we access this array through props.
+
+In the return of the child component, we access this data and use map.
+
+{props.items.map((expense) => <ExpenseItem
+
+title = {expense.title}
+/>)}
+
+The title is now accessed from the parameter expense we passed in map. 
