@@ -7,4 +7,22 @@ In the return of the child component, we access this data and use map.
 title = {expense.title}
 />)}
 
-The title is now accessed from the parameter expense we passed in map. 
+The title is now accessed from the parameter expense we passed in map.
+
+---
+
+In App.js, we took our array of data and changed its name so we could set useState(DUMMY_DATA).
+
+In the addExpenseHandler we used our setState function but applied a special procedure to ensure that we retrieve older data with the creation of new data.
+
+--->
+
+const addExpenseHandler = (expense) => {
+setExpenses((prevExpenses) => {
+********return[expense, ...prevExpenses]
+})
+}
+
+--expense paramater is the new data we typed.
+--...prevExpenses is the old data
+--[it's all inside a new array]
